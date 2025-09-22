@@ -1,0 +1,19 @@
+# QA Project Load Testing Test Data
+# CSV format for parameterized testing
+
+username,password,email,expected_status
+testuser001,LoadTest123!,testuser001@testdomain.com,200
+testuser002,LoadTest123!,testuser002@testdomain.com,200
+testuser003,LoadTest123!,testuser003@testdomain.com,200
+testuser004,LoadTest123!,testuser004@testdomain.com,200
+testuser005,LoadTest123!,testuser005@testdomain.com,200
+testuser006,LoadTest123!,testuser006@testdomain.com,200
+testuser007,LoadTest123!,testuser007@testdomain.com,200
+testuser008,LoadTest123!,testuser008@testdomain.com,200
+testuser009,LoadTest123!,testuser009@testdomain.com,200
+testuser010,LoadTest123!,testuser010@testdomain.com,200
+invaliduser,wrongpass,invalid@email,401
+shortpw,123,short@email.com,400
+,emptyuser,empty@email.com,400
+longusernamethatexceedslimit,LoadTest123!,long@email.com,400
+validuser,LoadTest123!,notanemail,400
